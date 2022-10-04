@@ -33,13 +33,13 @@ a {
   background-color: #48455a;
   color: white;
   width: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .banner-btn .btn:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .banner-btn i {
@@ -49,6 +49,37 @@ a {
 
 .banner-btn .btn:nth-child(2) {
   background-color: #d8532b;
+}
+
+.globel-btn-box .btn {
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 35px;
+  border-radius: 50px;
+  border: 1px solid;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1);
+          box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.globel-btn-box .btn i {
+  font-size: 16px;
+}
+
+.globel-btn-box .btn-inline {
+  color: white;
+  background-color: #d8532b;
+  border: #d8532b;
+}
+
+.globel-btn-box .btn-inline:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: #48455a;
 }
 
 /* Mobile screen */
@@ -669,10 +700,10 @@ a {
 }
 
 .my-services .row .service-card .w-website-design {
-  width: 100px;
+  width: 65px;
   position: absolute;
-  top: 5%;
-  left: 3%;
+  top: 6%;
+  left: 6%;
 }
 
 .my-services .row .service-card h3 {
@@ -735,10 +766,19 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .my-services .col-12:nth-child(2) {
+  .my-services {
+    padding: 20px 0px;
+  }
+  .my-services .row {
+    margin-top: 10px;
+  }
+  .my-services .row .service-card {
+    padding: 20px 10px !important;
+  }
+  .my-services .row .col-12:nth-child(2) {
     margin-top: 0px !important;
   }
-  .my-services .col-12:nth-child(5) {
+  .my-services .row .col-12:nth-child(5) {
     margin-top: 0px !important;
   }
 }
@@ -808,5 +848,147 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .coding-structuer {
+    padding: 20px 0px;
+  }
+  .coding-structuer .coding-content h3 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  .coding-structuer .coding-content p {
+    width: 100% !important;
+  }
+}
+
+.my-skills {
+  padding: 50px 0px;
+}
+
+.my-skills .skills-card {
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 30px 0px 0px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.my-skills .skills-card .skills-img {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0px auto 30px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.my-skills .skills-card .skills-img img {
+  width: auto;
+  height: 60px;
+  padding: 5px 0px;
+}
+
+.my-skills .skills-card .skills-name {
+  border-top: 1px solid #e8e8e8;
+}
+
+.my-skills .skills-card .skills-name p {
+  color: #48455a;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 8px 0px;
+}
+
+.my-skills .skills-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #d8532b;
+}
+
+.my-skills .skills-card:hover .skills-img {
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  border-radius: 0px;
+  border-radius: 10px;
+}
+
+.my-skills .skills-card:hover .skills-name p {
+  color: white;
+}
+
+.discuss-part .discuss-oly {
+  background: #d8532b;
+  border-radius: 10px;
+  padding: 0px 15px;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.discuss-part .discuss-oly .discuss-bg {
+  background: url("../images/discuss-part/intro.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 70px 70px;
+  border-radius: 10px;
+}
+
+.discuss-part .discuss-oly .discuss-bg .discuss-content h3 {
+  color: white;
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 22px;
+  font-weight: bold;
+}
+
+.discuss-part .discuss-oly .discuss-bg .discuss-content p {
+  font-size: 18px;
+  color: white;
+}
+
+.discuss-part .discuss-oly .discuss-bg .discuss-btn {
+  height: 100% !important;
+}
+
+.discuss-part .discuss-oly .discuss-bg .discuss-btn .globel-btn-box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discuss-part .discuss-oly .discuss-bg .discuss-btn .globel-btn-box .btn {
+  background-color: white;
+  color: #d8532b;
+  font-weight: bold;
+}
+
+.discuss-part .discuss-oly .discuss-bg .discuss-btn .globel-btn-box .btn:hover {
+  background-color: #48455a;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .discuss-part .discuss-oly .discuss-bg {
+    padding: 40px 20px !important;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
