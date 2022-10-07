@@ -190,7 +190,7 @@ a {
 
 .hero {
   padding: 50px 0px;
-  background-image: url("/images/Hero-section/banner.png");
+  background-image: url("../images/Hero-section/banner.png");
   background-size: 100%;
   position: relative;
 }
